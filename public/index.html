@@ -8,6 +8,93 @@
     <link rel="stylesheet" href="style.css"></link>
   </head>
   <body>
-    <h1 class="text-red-50">setup</h1>
+    <nav class="bg-sky-700 ">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-24 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <!--
+            Icon when menu is closed.
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-between ">
+        <div class="flex flex-shrink-0 items-center">
+          <img class="h-16 w-auto" src="vc_logo.png" alt="Your Company">
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <!-- <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a> -->
+            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Services</a>
+            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About us</a>
+            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+    </div>
+  </div>
+</nav>
+<div class="flex items-center justify-around h-8 py-4">
+  <div class="font-bold text-sky-700 cursor-pointer hover:text-red-500 " >Inspection</div>
+  <div class="text-sky-700 font-bold cursor-pointer hover:text-red-500 ">Repair and Maintenaince</div>
+  <div class="text-sky-700 font-bold cursor-pointer hover:text-red-500 ">Consultancy</div>
+
+</div>
+<div class="relative mb-8">
+  <span class="px-10 text-sky-700 text-5xl flex h-full w-full items-center font-semibold absolute  align-middle">Ensure Your <br> Vessel's Compliance <br> Today!</span>
+  <img src="background_image.jpg" alt="Background Image">
+</div>
+<section class="px-10">
+  <div>
+ <h1 class="mb-8 text-sky-700 text-5xl flex h-full w-full items-center font-semibold">About us</h1>
+  <span class="mb-8 text-sky-700 text-3xl font-semibold">VesselCare: Hong Kong's Leading Vessel Inspection Experts</span>
+  </div>
+ 
+  <div class="flex items-center">
+    <div class="px-10">
+       <p class="text-xl mb-5">
+    VesselCare is a Hong Kong-based company committed to delivering top-tier vessel inspection services to the maritime industry. With a focus on precision, compliance, and safety, we specialize in conducting thorough inspections to ensure vessels meet the highest international standards. Our mission is to support shipowners and operators by offering expert guidance, comprehensive reports, and actionable recommendations to enhance vessel performance and safety.
+  </p>
+  <p class="text-xl mb-5">
+    Backed by a team of seasoned maritime professionals, VesselCare brings years of expertise and a deep understanding of the complexities involved in vessel operations and regulatory compliance. Our services cover everything from structural assessments to safety inspections, ensuring that each vessel is seaworthy and adheres to global regulations.
+  </p>
+  <p class="text-xl mb-5">
+    VesselCare combines state-of-the-art technology with industry best practices to deliver detailed, reliable, and timely inspection reports. We aim to simplify the inspection process, helping shipowners and operators avoid costly non-compliance issues and minimize operational downtime.
+  </p>
+    </div>
+    <img class="" src="inspection_img.jpeg" alt="vessel_img">
+    
+  </div>
+ 
+</section>
+   
   </body>
 </html>
