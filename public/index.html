@@ -1,100 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VesselCare - Vessel Inspection Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/tab_logo.jpg" />
   </head>
   <body>
-    <nav class="bg-sky-700 ">
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-24 items-center justify-between">
-      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-        <!-- Mobile menu button-->
-        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-          <span class="absolute -inset-0.5"></span>
-          <span class="sr-only">Open main menu</span>
-          <!--
+    <nav class="bg-sky-700 sticky top-0 overflow-hidden z-10">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-24 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
             Icon when menu is closed.
 
             Menu open: "hidden", Menu closed: "block"
           -->
-          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-          <!--
+              <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!--
             Icon when menu is open.
 
             Menu open: "block", Menu closed: "hidden"
           -->
-          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      <div class="flex flex-1 items-center justify-between ">
-        <div class="flex flex-shrink-0 items-center">
-          <img class="h-16 w-auto" src="vc_logo.png" alt="Your Company">
-        </div>
-        <div class="hidden sm:ml-6 sm:block">
-          <div class="flex space-x-4">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <!-- <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a> -->
-            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Services</a>
-            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About us</a>
-            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact us</a>
+              <svg
+                class="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-between">
+            <div class="flex flex-shrink-0 items-center">
+              <img class="h-16 w-auto" src="vc_logo.jpg" alt="Your Company" />
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <!-- <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a> -->
+                <a
+                  href="#services"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white hover:text-sky-700"
+                  >Services</a
+                >
+                <a
+                  href="#aboutus_section"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white hover:text-sky-700"
+                  >About us</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white hover:text-sky-700"
+                  >Contact us</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="sm:hidden" id="mobile-menu">
-    <div class="space-y-1 px-2 pb-3 pt-2">
-      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            href="#"
+            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            aria-current="page"
+            >Dashboard</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Team</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Projects</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Calendar</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="flex items-center justify-around h-8 py-4">
+      <div class="font-bold text-sky-700 cursor-pointer hover:text-red-500">
+        Inspection
+      </div>
+      <div class="text-sky-700 font-bold cursor-pointer hover:text-red-500">
+        Repair and Maintenaince
+      </div>
+      <div class="text-sky-700 font-bold cursor-pointer hover:text-red-500">
+        Consultancy
+      </div>
+    </div> -->
+    <div class="relative mb-8">
+      <span
+        class="px-10 text-sky-700 text-5xl flex h-full w-full items-center font-semibold absolute align-middle"
+        >Ensure Your <br />
+        Vessel's Compliance <br />
+        Today!</span
+      >
+      <img src="img/background_image.jpg" alt="Background Image" />
     </div>
-  </div>
-</nav>
-<div class="flex items-center justify-around h-8 py-4">
-  <div class="font-bold text-sky-700 cursor-pointer hover:text-red-500 " >Inspection</div>
-  <div class="text-sky-700 font-bold cursor-pointer hover:text-red-500 ">Repair and Maintenaince</div>
-  <div class="text-sky-700 font-bold cursor-pointer hover:text-red-500 ">Consultancy</div>
 
-</div>
-<div class="relative mb-8">
-  <span class="px-10 text-sky-700 text-5xl flex h-full w-full items-center font-semibold absolute  align-middle">Ensure Your <br> Vessel's Compliance <br> Today!</span>
-  <img src="background_image.jpg" alt="Background Image">
-</div>
-<section class="px-10">
-  <div>
- <h1 class="mb-8 text-sky-700 text-5xl flex h-full w-full items-center font-semibold">About us</h1>
-  <span class="mb-8 text-sky-700 text-3xl font-semibold">VesselCare: Hong Kong's Leading Vessel Inspection Experts</span>
-  </div>
- 
-  <div class="flex items-center">
-    <div class="px-10">
-       <p class="text-xl mb-5">
-    VesselCare is a Hong Kong-based company committed to delivering top-tier vessel inspection services to the maritime industry. With a focus on precision, compliance, and safety, we specialize in conducting thorough inspections to ensure vessels meet the highest international standards. Our mission is to support shipowners and operators by offering expert guidance, comprehensive reports, and actionable recommendations to enhance vessel performance and safety.
-  </p>
-  <p class="text-xl mb-5">
-    Backed by a team of seasoned maritime professionals, VesselCare brings years of expertise and a deep understanding of the complexities involved in vessel operations and regulatory compliance. Our services cover everything from structural assessments to safety inspections, ensuring that each vessel is seaworthy and adheres to global regulations.
-  </p>
-  <p class="text-xl mb-5">
-    VesselCare combines state-of-the-art technology with industry best practices to deliver detailed, reliable, and timely inspection reports. We aim to simplify the inspection process, helping shipowners and operators avoid costly non-compliance issues and minimize operational downtime.
-  </p>
-    </div>
-    <img class="" src="inspection_img.jpeg" alt="vessel_img">
-    
-  </div>
- 
-</section>
-   
+    <!-- about us sec -->
+    <section id="aboutus_section" class="px-20 my-56">
+      <div class="">
+        <h1
+          class="mb-8 text-sky-700 text-5xl flex h-full w-full items-center font-semibold"
+        >
+          About us
+        </h1>
+        <span class="mb-8 text-sky-700 text-3xl font-semibold"
+          >VesselCare: Vessel Inspection Experts</span
+        >
+      </div>
+
+      <div class="flex items-center">
+        <div class="pr-10">
+          <p class="text-xl mb-5">
+            VesselCare is a Hong Kong-based company committed to delivering
+            top-tier vessel inspection services to the maritime industry. With a
+            focus on precision, compliance, and safety, we specialize in
+            conducting thorough inspections to ensure vessels meet the highest
+            international standards. Our mission is to support shipowners and
+            operators by offering expert guidance, comprehensive reports, and
+            actionable recommendations to enhance vessel performance and safety.
+          </p>
+          <p class="text-xl mb-5">
+            Backed by a team of seasoned maritime professionals, VesselCare
+            brings years of expertise and a deep understanding of the
+            complexities involved in vessel operations and regulatory
+            compliance. Our services cover everything from structural
+            assessments to safety inspections, ensuring that each vessel is
+            seaworthy and adheres to global regulations.
+          </p>
+          <p class="text-xl mb-5">
+            VesselCare combines state-of-the-art technology with industry best
+            practices to deliver detailed, reliable, and timely inspection
+            reports. We aim to simplify the inspection process, helping
+            shipowners and operators avoid costly non-compliance issues and
+            minimize operational downtime.
+          </p>
+        </div>
+        <img class="w-1/2" src="inspection_img.jpeg" alt="vessel_img" />
+      </div>
+    </section>
+
+    <!-- inspection sec -->
+    <section id="services" class="px-10">
+      <h1
+        class="mb-8 text-sky-700 text-5xl flex h-full w-full items-center font-semibold"
+      >
+        Maritme Inspection Services
+      </h1>
+
+      <!-- inspection heading first -->
+      <div class="flex items-center">
+        <div class="flex-col items-center px-10">
+          <span class="text-sky-700 text-3xl font-semibold"
+            >Cargo Holds Inspection</span
+          >
+          <div class="mt-10">
+            <p class="text-xl mb-5">
+              At <b>VesselCare</b>, our Cargo Holds Inspection service is
+              designed to ensure the cleanliness, safety, and structural
+              integrity of cargo holds before any loading operation. Our
+              experienced inspectors thoroughly assess the condition of the
+              holds, checking for corrosion, damages, contamination, and pest
+              infestations, ensuring the holds are in optimal condition to carry
+              goods. This process guarantees that vessels comply with
+              international standards and avoid any delays or cargo rejections.
+            </p>
+            <p class="text-xl mb-5">
+              We utilize advanced inspection techniques to provide detailed
+              reports that highlight any issues found and offer recommendations
+              for necessary repairs or maintenance. Our goal is to help
+              shipowners and operators maintain the quality and safety of their
+              cargo, minimizing risks and maximizing operational efficiency.
+              Whether transporting bulk goods or sensitive materials,
+              VesselCare’s Cargo Holds Inspection service ensures your vessels
+              are always ready for their next voyage.
+            </p>
+          </div>
+        </div>
+        <img class="" src="img/cargo_hold_inspection.png" alt="vessel_img" />
+      </div>
+      <div class="flex items-center mt-20">
+        <img class="" src="img/pre_purchase_inspection.png" alt="vessel_img" />
+        <div class="flex-col items-center px-10">
+          <span class="text-sky-700 text-3xl font-semibold"
+            >Pre-Purchase Inspection</span
+          >
+          <div class="mt-10">
+            <p class="text-xl mb-5">
+              <b>VesselCare</b> offers comprehensive Pre-Purchase Inspection
+              services to assist buyers in making informed decisions before
+              acquiring a vessel. Our team of expert inspectors conducts a
+              thorough assessment of the vessel’s condition, covering everything
+              from hull integrity and machinery to safety equipment and
+              documentation. We provide detailed, unbiased reports that
+              highlight any existing issues or potential risks, allowing buyers
+              to evaluate the true value and operational readiness of the
+              vessel.
+            </p>
+            <p class="text-xl mb-5">
+              Our <b>Pre-Purchase Inspections</b> are designed to minimize
+              financial risks and ensure the vessel complies with international
+              maritime standards. With VesselCare’s trusted service, buyers gain
+              the confidence needed to make well-informed investments, knowing
+              that every aspect of the vessel has been carefully examined by
+              experienced professionals. Whether you're purchasing a single
+              vessel or an entire fleet, our inspection service ensures
+              transparency and peace of mind throughout the buying process.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <div class="flex-col items-center px-10">
+          <span class="text-sky-700 text-3xl font-semibold"
+            >Condition Inspection</span
+          >
+          <div class="mt-10">
+            <p class="text-xl mb-5">
+              <b>VesselCare</b> offers detailed Condition Inspection services to
+              provide shipowners and operators with an in-depth assessment of
+              their vessel's current state. Our inspections cover all major
+              aspects of the vessel, including hull structure, machinery, safety
+              equipment, and overall seaworthiness. We help identify wear,
+              potential risks, and areas requiring maintenance, ensuring that
+              your vessel remains in optimal condition and fully compliant with
+              maritime standards.
+            </p>
+            <p class="text-xl mb-5">
+              Our Condition Inspection service is designed to prevent costly
+              repairs and operational downtime by delivering comprehensive
+              reports with clear recommendations for necessary actions. By using
+              <b>VesselCare’s</b> Condition Inspections, shipowners can
+              proactively manage their fleet's health, improving operational
+              efficiency and extending the lifespan of their vessels.
+            </p>
+          </div>
+        </div>
+        <img class="" src="img/condition_inspection.png" alt="vessel_img" />
+      </div>
+      <div class="flex items-center mt-20">
+        <img class="" src="img/pre_vetting_inspection.png" alt="vessel_img" />
+        <div class="flex-col items-center px-10">
+          <span class="text-sky-700 text-3xl font-semibold"
+            >Pre-vetting Inspection</span
+          >
+          <div class="mt-10">
+            <p class="text-xl mb-5">
+              <b>VesselCare</b> provides expert Pre-Vetting Inspection services
+              to help shipowners and operators prepare for upcoming vetting
+              inspections by charterers or oil majors. Our team conducts a
+              meticulous examination of all critical areas, including safety
+              systems, structural integrity, and compliance with industry
+              regulations. By identifying potential deficiencies in advance, we
+              help you address issues before the official vetting process,
+              reducing the risk of delays or rejections.
+            </p>
+            <p class="text-xl mb-5">
+              Our Pre-Vetting Inspection reports are thorough and actionable,
+              offering clear guidance on corrective actions to ensure the vessel
+              meets the highest standards of safety and performance. With
+              <b>VesselCare’s</b> Pre-Vetting service, you can approach the
+              vetting process with confidence, knowing that your vessel is fully
+              prepared and in optimal condition for successful approval.
+            </p>
+          </div>
+        </div>
+        <!-- inspection heading second -->
+      </div>
+    </section>
+    <footer>
+      <div class="bg-sky-700">
+        <p></p>
+      </div>
+    </footer>
   </body>
 </html>
