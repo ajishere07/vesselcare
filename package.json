@@ -4,16 +4,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "tailwindcss -i ./src/input.css -o ./public/style.css --watch",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
-
+    "start": "tailwindcss -i ./src/input.css -o ./build/style.css --watch",
+    "prettier":"npx prettier --write **/*.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "tailwindcss": "^3.4.10"
   },
   "dependencies": {
