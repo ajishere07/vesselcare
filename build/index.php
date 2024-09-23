@@ -478,14 +478,18 @@
                 <img src="icons/tick_icon.png" class="w-7" /><span class="mx-2"
                   ><b>Regular Safety Audits:</b></span
                 >
-                We conduct frequent audits to maintain high safety standards and ensure ongoing vessel readiness.
+                We conduct frequent audits to maintain high safety standards and
+                ensure ongoing vessel readiness.
               </div>
             </li>
+            <li class="mb-5">
               <div class="text-sm flex items-center">
                 <img src="icons/tick_icon.png" class="w-7" /><span class="mx-2"
                   ><b>Compliance Assurance:</b></span
                 >
-                We ensure that all operations meet international and local maritime safety standards, keeping your vessel in full regulatory compliance.
+                We ensure that all operations meet international and local
+                maritime safety standards, keeping your vessel in full
+                regulatory compliance.
               </div>
             </li>
           </ul>
@@ -551,19 +555,14 @@
             </p>
           </div>
 
-
-
-
-
-
-
-
           <div
             class="bg-sky-700 w-full mx-auto flex items-center justify-center p-5"
           >
             <p class="text-xl text-white">
               <i
-                >"With inspectors in key ports worldwide, VesselCare guarantees swift, flexible service, minimizing travel delays and keeping vessels on schedule wherever they are."</i
+                >"With inspectors in key ports worldwide, VesselCare guarantees
+                swift, flexible service, minimizing travel delays and keeping
+                vessels on schedule wherever they are."</i
               >
             </p>
           </div>
@@ -572,7 +571,10 @@
           >
             <p class="text-xl text-black">
               <i
-                >"Our team’s deep knowledge of local regulations and effective communication helps overcome language barriers and ensures smooth coordination with shore authorities, preventing operational disruptions."</i
+                >"Our team’s deep knowledge of local regulations and effective
+                communication helps overcome language barriers and ensures
+                smooth coordination with shore authorities, preventing
+                operational disruptions."</i
               >
             </p>
           </div>
@@ -581,7 +583,10 @@
           >
             <p class="text-xl color-white">
               <i
-                >"We respond rapidly in emergencies, coordinating with local authorities and workshops to resolve issues quickly. The management office is kept informed, ensuring minimal operational downtime."</i
+                >"We respond rapidly in emergencies, coordinating with local
+                authorities and workshops to resolve issues quickly. The
+                management office is kept informed, ensuring minimal operational
+                downtime."</i
               >
             </p>
           </div>
@@ -590,7 +595,10 @@
           >
             <p class="text-xl text-white">
               <i
-                >"Our team consists of seasoned inspectors with extensive maritime experience, enabling them to provide practical solutions that enhance vessel efficiency and ensure adherence to safety regulations."</i
+                >"Our team consists of seasoned inspectors with extensive
+                maritime experience, enabling them to provide practical
+                solutions that enhance vessel efficiency and ensure adherence to
+                safety regulations."</i
               >
             </p>
           </div>
@@ -608,11 +616,12 @@
         class="mx-auto max-w-7xl flex items-center justify-between pb-20 px-20"
       >
         <section class="basis-3/5" id="form_section">
-          <form>
+          <form action="send.php" method="post">
             <div class="">
               <div class="">
                 <div class="w-full">
                   <input
+                    required
                     type="text"
                     name="name"
                     id="name"
@@ -629,9 +638,10 @@
                     class="flex w-full rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600"
                   >
                     <input
-                      type="text"
-                      name="username"
-                      id="username"
+                      required
+                      type="email"
+                      name="email"
+                      id="email"
                       autocomplete="username"
                       class="rounded-md w-full bg-white px-10 block border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                       placeholder="EXAMPLE@GMAIL.COM"
@@ -642,24 +652,25 @@
               <div class="col-span-full">
                 <div class="mt-2">
                   <textarea
-                    placeholder="MESSAGE"
-                    id="about"
-                    name="about"
+                    required
+                    placeholder="How can we help you?"
+                    id="message"
+                    name="message"
                     rows="3"
                     class="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
                   ></textarea>
                 </div>
               </div>
-              <button
-                type="submit"
-                class="font-bold mt-2 text-center w-full h-10 rounded-md"
-                style="background-color: white; color: #0369a1"
-              >
-                Submit
-              </button>
+              <button type="submit"
+              name="send"
+                class="cursor-pointer font-bold mt-2 text-center w-full h-10 rounded-md"
+                value="Submit"
+                style="background-color: white; color: #0369a1">Submit</button>
+             
+              
+               
+              
             </div>
-
-            <!-- old code -->
           </form>
         </section>
         <section id="contact_us_section">
